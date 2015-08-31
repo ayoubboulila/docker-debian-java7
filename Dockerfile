@@ -7,10 +7,11 @@
 # 0.0.3 : take only necessary in jdk (jre+tools.jar) : reduce image size from 580.4MB to 449.6MB, add JAVA_HOME env
 # 0.0.4 : change to debian:wheezy in order to reduce image size (449.6MB->269.4MB)
 # 0.0.5 : add unzip package + update to 7u79
+# forked repository from snasello/docker-debian-java7
 
 FROM debian:wheezy
 
-MAINTAINER Samuel Nasello <samuel.nasello@elosi.com>
+MAINTAINER Ayoub Boulila <ayoubboulila@gmail.com>
 
 RUN apt-get update \
 	&& apt-get install -y curl tar unzip \
