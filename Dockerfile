@@ -19,5 +19,6 @@ RUN apt-get update \
 	&& (curl -s -k -L -C - -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz | tar xfz - -C /opt) \
 	&& ln -s /opt/jdk1.7.0_79 /opt/java
 
+
 # Set JAVA_HOME
 ENV JAVA_HOME /opt/java
